@@ -125,12 +125,14 @@ img {
    display: flex;
    gap: 30px;
    justify-content: center;
+   flex-wrap: wrap;
 }                               
 .Tarjeta{
     width: 320px;
     height: 550px;
     border: 1px solid gray;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 .botom-tajeta{
     margin: 30px;
@@ -153,11 +155,7 @@ img {
     background-color:gold;
     text-align: center;
     border-radius: 5px;
-    
-    
-    
-
-}
+    }
 
 
 .botoncito-celeste{
@@ -165,11 +163,9 @@ img {
     margin: 0px;
     font-size: small;
     background-color: rgb(74, 167, 198);
-  
+     color: white;
     border-radius: 5px;
-    color: white;
-
-}
+   }
 
 .botoncito-gris{
     padding: 2px;
@@ -179,7 +175,6 @@ img {
   
     border-radius: 5px;
     color: white;
-
 }
 
 .botoncito-rojo{
@@ -187,8 +182,151 @@ img {
     margin: 0px;
     font-size: small;
     background-color: red;
-  
-    border-radius: 5px;
+     border-radius: 5px;
     color: white;
-
 }
+     
+                              /* ESTILOS SECCION LUGAR Y FECHA*/
+
+
+.section-lugar{
+    display: flex;
+    width: 100%;
+    
+}
+
+.img-lugar{
+    width: 50%;
+    height: 450px;
+}
+
+.card-ba-octubre{
+    padding: 30px;
+    height: 450px;
+    background-color:  rgb(85, 85, 85);
+}
+.ba-octubre{
+    color: white;
+}
+.pba-octubre{
+    color: white;
+}
+.boton-ba-octubre{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+                                 /* SECCION CONVIERTETE EN ORADOR*/
+  
+.titulo2{
+   font-size:small;
+   padding: 0px;
+   margin: 0px;
+   margin-top: 20px;
+ 
+
+}  
+.titulo3{
+    padding: 0px;
+    margin: 0px;
+    font-size: 32px;
+    margin-bottom: 20px;
+}   
+.formulario-oradores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-form{
+    width: 600px;
+   height: 250px;
+    display: flex;
+    justify-content: center;
+    
+}
+.Formulario{
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+    
+    
+}
+.items-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.itemc{
+    
+width: 100%;
+    margin-top: 30px;
+}
+.itef{
+    width: 100%;
+}
+.conteiner-name{
+    width: 49%;
+}
+.conteiner-apellido{
+    width: 49%;
+}
+.item-name{
+    width: 100%;
+}
+.item-apellido{
+    width: 100%;
+}
+.boton-form{
+    width: 100%;
+    margin-top: 30px;
+    background-color: green;
+    border-radius: 5px;
+    border: 0px;
+    height: 40px;
+    color: white;
+}
+    .small{
+        
+        color: gray;
+        align-self: flex-start;
+        font-size: small;
+    }
+    .titulo5{
+        font-size: small;
+        margin-bottom: 15px;
+    }
+    u{
+        text-decoration: underline dotted black;
+    }
+                             /* FOOTER*/
+
+ footer{
+    background-color: rgb(2, 72, 95);
+    margin:0px;
+    height: 75px;
+    
+    
+
+    
+    
+       }    
+       
+    .footer-list{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        list-style: none;
+        color: white;
+        padding-top: 30px;
+      
+        
+        
+       
+        
+    }   
