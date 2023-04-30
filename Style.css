@@ -18,6 +18,9 @@ margin: 0px;
      top: 0px;
      z-index: 3;
 }
+.link{
+    text-decoration: none;
+}
 .logocodo{
 width: 70%;
 height: 70%;
