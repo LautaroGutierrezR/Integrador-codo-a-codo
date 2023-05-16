@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Tickets.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Tickets</title>
+</head>
+<body>
+    <nav class="Navegacion">
+        <div class="navi">
+        <img class="logocodo" src="./Imagenes-codo/codoacodo.png" alt="logo codo a codo">
+        <h1 class="h1nav">Conf Bs As</h1>
+        </div>
+        <ul class="lista-nav">
+            <a class="link" href="#conferencia"> <li class="item-nav">La conferencia</li> </a>
+           <a class="link" href="#oradores"> <li class="item-nav" >Los oradores</li> </a>
+           <a class="link" href="#lugar"> <li class="item-nav">  El lugar y la fecha</li> </a>
+           <a class="link" href="#orador"> <li class="item-nav" >Conviertete en orador</li> </a>
+           <a class="link" href="#conferencia"> <li class="item-nav" id="tickets" >Comprar tickets</li></a>
+        </ul>
+
+    </nav>
+    <section class="descuentos">
+        <div class="estudiante">
+            <h4> Estudiante</h4>
+            <p>Tiene descuento</p>
+            <h5>80%</h5>
+            <p>* Presentar documentacion</p>
+
+        </div>
+
+        <div class="trainee">
+            <h4> Trainee</h4>
+            <p>Tiene descuento</p>
+            <h5>50%</h5>
+            <p>* Presentar documentacion</p>
+
+        </div>
+
+
+        <div class="junior">
+            <h4> Junior</h4>
+            <p>Tiene descuento</p>
+            <h5>15%</h5>
+            <p>* Presentar documentacion</p>
+
+        </div>
+
+    </section>
+<div class="titulos">
+    <h4>VENTA</h4>
+    <h3>VALOR TICKET 200$</h3>
+</div>
+
+<div class="container">
+<div class="Formulario">
+    <div class="items1" >
+<label for="Nombre:" class="conteiner-name" >
+   
+   <input  type="text" name="Nombre:" id="Nombre:"  placeholder="Ricardo" class="item-name" >
+</label>
+<label for="Apellido:" class="conteiner-apellido" >
+   
+   <input type="text" name="Apellido:" id="Apellido:"  placeholder="Fort" class="item-apellido" >
+</label>
+   </div>
+   <label for="Email:" class="conteiner-email" >
+   
+   <input type="email" name="Email:" id="Apellido:"  placeholder="Ejemplo@gmail.com" class="item-mail" >
+</label>
+<div class="items2">
+    <p class="cosita">Cantidad</p>
+    <p class="cosita1">Categoria</p>
+</div>
+<div class="items4">
+    <label for="Nombre:" class="conteiner-cantidad" >
+   
+        <input  type="number" name="Cantidad" id="Cantidad" required placeholder="Cantidad" class="item-cantidad" >
+     </label>
+
+  <label  class="conteiner-descuento" for="descuento">
+            <select class="item-descuento" name="" id="select">
+                <option value="Estudiante"> Estudiante</option>
+                <option value="Trainee"> Trainee</option>
+                <option value="Junior"> Junior</option>
+                <option value="n/a">No aplica</option>
+            </select>
+</div>
+     <h2 class="pagar" id="pagar">Total a pagar:</h2>
+   <div class="items3">
+   <button onclick="Clear()" class="borrar">Borrar</button>
+   <button onclick="Calcular()" id="calcular "class="resumen">Resumen</button>
+   </div>
+   
+</div>
+</div>
+
+   <footer>
+    <ul class="footer-list">
+       <li>Preguntas frecuentes</li>
+       <li>Contactanos</li>
+       <li>Prensa</li>
+       <li>Conferencias</li>
+       <li>Terminos y condiciones</li>
+       <li>Privacidad</li>
+       <li>Estudiantes</li>
+
+    </ul>
+
+
+
+</footer>
+<script>
+    let resultado=0
+    document.getElementById("pagar").innerHTML= "Total a pagar:  " + resultado + "$"
+    
+
+
+function Calcular(){
+    let cantidad = document.getElementById("Cantidad").value
+    var select = document.getElementById("select").value;
+    if ( select === "Estudiante") {
+       descuento = 0.2;
+  } else if (select === "Trainee") {
+    descuento = 0.5;
+  } else if (select === "Junior") {
+    descuento = 0.85;
+  } else {
+    descuento = 1;
+  }
+    var descuento;
+    
+    resultado= (cantidad * 200) * descuento
+    return document.getElementById("pagar").innerHTML= "Total a pagar:  " + resultado + "$"
+}
+  function Clear(){
+
+  let resultado=0
+    document.getElementById("pagar").innerHTML= "Total a pagar:  " + resultado + "$"
+
+       let cantidad = document.getElementById("Cantidad").value=0
+  }
+   
+  
+
+</script>
+
+</body>
+</html>

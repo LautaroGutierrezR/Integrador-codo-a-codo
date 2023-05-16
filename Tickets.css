@@ -1,0 +1,252 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    }
+    
+                                      /* ESTILOS DE LA NAVEGACION*/  
+    
+    .Navegacion{
+        height: 80px;
+        background-color: rgb(85, 85, 85);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        position: sticky;
+         top: 0px;
+         z-index: 3;
+    }
+    .link{
+        text-decoration: none;
+    }
+    .logocodo{
+    width: 70%;
+    height: 70%;
+    align-self: center;
+    }
+    .lista-nav{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin-right: 100px;
+        align-self: center;
+        margin-top: 20px;
+    
+    }
+    .item-nav{
+        color:rgb(189, 189, 189);
+    }
+    .navi{
+        display: flex;
+        margin-left: 100px;
+    }
+    .h1nav{
+        font-size: medium;
+        width: 120px;
+        align-self: center;
+        color: white;
+        font-style: normal;
+        font-size: 18px;
+    }
+    #tickets{
+        color: rgb(0, 165, 0);
+    }
+    
+    :hover.item-nav{
+        color: white;
+        cursor: pointer;
+    }
+
+
+
+
+     .descuentos{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 30px;
+        
+     }
+
+
+             .estudiante{
+        height: 250px;
+        width: 250px;
+        border: solid 2px blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .trainee {
+        height: 250px;
+        width: 250px;
+        border: solid 2px green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+      }
+
+    .junior{
+
+        height: 250px;
+        width: 250px;
+        border: solid 2px orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+.titulos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Formulario{
+    
+    width: 700px;
+    height: 350px;
+   
+}
+.conteiner-name{
+    width: 49%;
+}
+.item-name{
+    width: 100%;
+    margin-bottom: 30px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+.conteiner-apellido{
+    width: 50%;
+}
+.pagar{
+    background-color: lightskyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.item-apellido{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+.items1{
+    width: 100%;
+}
+.items2{
+    display: flex;
+    padding: 0px;
+    
+}
+.cosita{
+    margin-right: 285px;
+   
+   
+    
+}
+.conteiner-email{
+    width: 100%;
+}
+.item-mail{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+.items3{
+    width: 100%;
+}
+.borrar{
+    width: 49%;
+    height: 40px;
+    background-color: chartreuse;
+    border: 0px;
+    border-radius: 10px;
+
+}
+.resumen{
+    width: 50%;
+    height: 40px;
+    background-color: chartreuse;
+    border: 0px;
+    border-radius: 10px;
+
+
+}  
+
+
+items4{
+    width: 100%;
+}
+.conteiner-cantidad{
+    width: 49%;
+}
+.item-cantidad{
+ width: 100%;
+ height: 40px;
+ border-radius: 10px;
+}
+.conteiner-descuento{
+width: 50%;
+}
+.item-descuento{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+                  /* FOOTER*/
+
+ footer{
+    background-color: rgb(2, 72, 95);
+    margin:0px;
+    height: 75px;
+    
+    
+
+    
+    
+       }    
+       
+    .footer-list{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        list-style: none;
+        color: white;
+        padding-top: 30px;
+    }
